@@ -1,7 +1,7 @@
 ﻿
 
-let cinema1: Cinema = new Cinema("Darkest Hour", 125, "Anthony McCarten", 50, 40);
-let person1: Person[] = new Array<Person>(cinema1.numOfSpectators);
+let cinema1: Cinema = new Cinema("Yes Planet", 40);
+let person1: Person[] = new Array<Person>(15);
 let numOfWorkers: number = 0, numOfStudents: number = 0, numOfTeachers: number = 0, sum: number = 0;
 
 initiateArray(person1);
@@ -35,9 +35,9 @@ function Revenue(p: Person[], c: Cinema): void {
                 numOfTeachers++;
             }
     }
-    document.write(`The total revenue of the film: ${cinema1.movieName} is: ${sum}<br/>`);
+    document.write(`The total revenue of cinema: ${cinema1.cinemaName} is: ${Math.round(sum)}<br/>`);
     document.write(`The price of a ticket is: ${cinema1.moviePrice}<br/>`);
-    document.write(`The total number of spectators is: ${cinema1.numOfSpectators}<br/>`);
+    document.write(`The total number of spectators is: ${person1.length}<br/>`)
     document.write(`The number of spectators who are students is: ${numOfStudents}<br/>`);
     document.write(`The number of spectators who are teachers is: ${numOfTeachers}<br/>`);
     document.write(`The number of spectators who are workers is: ${numOfWorkers}<br/>`);
